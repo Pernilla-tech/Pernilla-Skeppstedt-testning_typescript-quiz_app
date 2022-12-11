@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import EndGame from "./components/endgame/EndGame";
+import Game from "./components/Game";
+import StartGame from "./components/StartGame/StartGame";
+
+import config from "./confiq/QuizConfig";
+import { useGameQuiz } from "./context/QuizGameContext";
 
 function App() {
+  const { screen, answers } = useGameQuiz();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {screen === "start" ? (
+        <StartGame />
+      ) : answers.length === config.totalQuestions ? (
+        <EndGame />
+      ) : (
+        <Game />
+      )}
     </div>
   );
 }
