@@ -44,20 +44,16 @@ const CATEGORIES: Category[] = [
   },
 ];
 
+const TIME = 30;
 const TOTAL_QUESTIONS = 9;
-const QUESTION_TIMELIMIT = "";
-const QUESTION_COUNTDOWN = "";
 const POINTS = {
   [QuestionDifficulty.EASY]: 1,
   [QuestionDifficulty.MEDIUM]: 2,
   [QuestionDifficulty.HARD]: 3,
 };
-const TIME = 30;
 
 const config = {
   totalQuestions: TOTAL_QUESTIONS,
-  questionTimeLimit: QUESTION_TIMELIMIT,
-  questionCountdown: QUESTION_COUNTDOWN,
   points: POINTS,
   categories: CATEGORIES,
   time: TIME,
