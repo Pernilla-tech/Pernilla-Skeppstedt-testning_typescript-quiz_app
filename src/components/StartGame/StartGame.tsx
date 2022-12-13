@@ -1,14 +1,8 @@
 import { useGameQuiz } from "../../context/QuizGameContext";
 import { GameDifficulty } from "../../enums/Difficulty";
-import styled from "styled-components";
-
 import { Region } from "../../enums/Region";
 import Button from "../button/Button";
-
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
+import { Wrapper } from "./StartGameStyle";
 
 const StartGame = () => {
   const {

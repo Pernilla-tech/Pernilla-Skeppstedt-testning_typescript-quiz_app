@@ -1,14 +1,10 @@
 import { useState } from "react";
-import styled from "styled-components";
+
 import config from "../../confiq/QuizConfig";
 import { Category } from "../../interfaces/ICategory";
 import { shuffleArray } from "../../utils/ShuffleArray";
 import Button from "../button/Button";
-
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
+import { Wrapper } from "./PickCategoryStyle";
 
 type PickCategoryProps = {
   onCategoryPicked: (category: Category) => void;

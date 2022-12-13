@@ -7,7 +7,6 @@ import { Answer } from "../interfaces/IAnswer";
 import { Category } from "../interfaces/ICategory";
 import { Question } from "../interfaces/IQuestion";
 import AnswerQuestion from "./answerquestion/AnswerQuestion";
-
 import PickCategory from "./pickcategory/PickCategory";
 
 const Game = () => {

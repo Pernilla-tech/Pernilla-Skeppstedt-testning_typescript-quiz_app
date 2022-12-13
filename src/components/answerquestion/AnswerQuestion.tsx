@@ -6,21 +6,13 @@ import { Answer } from "../../interfaces/IAnswer";
 import { useCallback, useEffect, useState } from "react";
 import { Question } from "../../interfaces/IQuestion";
 import { ButtonVariant } from "../../enums/ButtonVariant";
-import styled from "styled-components";
+import {
+  QuestionWrapper,
+  GameInfo,
+  QuestionDisplay,
+} from "./AnswerQuestionStyle";
+
 import Button from "../button/Button";
-
-const QuestionWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
-const GameInfo = styled.div`
-  border: #646cffaa 2px solid;
-`;
-
-const QuestionDisplay = styled.div`
-  margin: 2px;
-`;
 
 type AnswerQuestionProps = {
   question: Question;
