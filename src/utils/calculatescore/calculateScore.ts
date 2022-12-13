@@ -7,10 +7,6 @@ type ScoreConfig = {
   [QuestionDifficulty.HARD]: number;
 };
 export function calculateScore(answers: Answer[], scoreConfig: ScoreConfig) {
-  //sek som är kvar * svårighetsgrad = summa för varje fråga
-  //+ antal gissade rätt totalt = siffra mellan 0-9
-  // * antal gissade rätt i föld om det är minst 3 rätt på raken= 3 eller större
-  //När alla 9 frågor besvarats visas totalpoängen
   let totalScore = 0;
   let correctCount = 0;
 
@@ -27,7 +23,7 @@ export function calculateScore(answers: Answer[], scoreConfig: ScoreConfig) {
 }
 
 function longestStreak(answers: Answer[]) {
-  let streakAnswers = 0; //antal rätt svar i rad
+  let streakAnswers = 0;
   let longest = 0;
   for (const answer of answers) {
     if (answer.correct) {

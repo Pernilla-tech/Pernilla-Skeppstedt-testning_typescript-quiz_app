@@ -29,7 +29,7 @@ const AnswerQuestion: React.FC<AnswerQuestionProps> = ({
 
   const checkAnswer = useCallback(
     (answer: string) => {
-      if (answerEntry != null) return; //Gör att det ej går att klicka på flera alternativ
+      if (answerEntry != null) return;
 
       const correct = answer === question.correctAnswer;
       setAnswerEntry({
@@ -43,10 +43,9 @@ const AnswerQuestion: React.FC<AnswerQuestionProps> = ({
   );
 
   const handleNextQuestion = () => {
-    onAnswer(answerEntry!); //! betyder att jag garanterar att den inte är null
+    onAnswer(answerEntry!);
   };
 
-  //När tiden har gått ut blir knapparna röda och du har inte längre möjlighet att svara
   useEffect(() => {
     if (timer === 0) {
       checkAnswer("");

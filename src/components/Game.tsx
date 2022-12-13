@@ -21,10 +21,8 @@ const Game = () => {
           .then((question) => setQuestion(question))
           .catch((err: any) => {
             if (err instanceof QuestionNotFoundError) {
-              // körs om en fråga ej hittas
               return callGetQuestion();
             } else {
-              //körs om felet beror på annan anledning, tex nätverksfel
               throw err;
             }
           });
@@ -37,7 +35,7 @@ const Game = () => {
   const onAnswer = (answer: Answer) => {
     addAnswer(answer);
 
-    setQuestion(null); //hamnar tillbaka till kategorierna
+    setQuestion(null);
   };
 
   return question === null ? (
