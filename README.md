@@ -2,10 +2,28 @@
 
 ## Open the app
 
-Enter your playername. This is not optional. Select difficulty and region. This is optional. Click at the "Start quiz" button and pick a category. After that the quiz will start in 3 seconds. Answer each one of the questions in max 30 seconds per question. After each question you will pick a new category. When all 9 questions are answered, you will see the total score in the end.
+Enter your playername. This is not optional.
+Select difficulty and region. This is optional.
+Click at the "Start quiz" button
+Pick a category. After that the quiz will start in 3 seconds.
+Answer each one of the questions in max 30 seconds per question.
+After each question you will pick a new category.
+When all nine questions are answered it shows the total score.
 
+## Design principes
 
+I have split up my code, so its easy to find components, enums, utils, interfaces, context etc.
+For example I have the API integration in one place, i have components in one folder, and every component has its own folder there the test, and styling who belongs to the component also is placed.
 
+I used styled components for styling the components, because I think its easy to work with and the codes get cleaner without a lot of classnames.
+
+## Testning
+
+I have worked with TDD and BDD test. For the BDD test I used Cypress because i never used it before and wanted to try it out and learn more about it.
+
+For the components and functions I wanted to test I used unit test.
+
+Stategy: Tried to cover the requirements of the assignement. 
 
 # Getting Started with Create React App
 
