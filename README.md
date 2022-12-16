@@ -23,7 +23,11 @@ I have worked with TDD and BDD test. For the BDD test I used Cypress because i n
 
 For the components and functions I wanted to test I used unit test.
 
-Stategy: Tried to cover the requirements of the assignement. 
+Strategy: Tried to cover the requirements of the assignement. 
+
+## Diagrams
+
+The sequence and class diagram can be find in the "docs" folder. 
 
 # Getting Started with Create React App
 
