@@ -4,7 +4,7 @@ describe("One round of a quiz game", () => {
     cy.get("h1").should("contain", "Start quiz");
     cy.get("[data-testid=playername-input]").type("Johnny");
     cy.get("[data-testid=select-difficulty]").select("medium");
-    cy.get("[data-testid=select-region]").select("BG");
+    cy.get("[data-testid=select-region]").select("GB");
     cy.get("[data-testid=start-quiz-button]").click();
 
     cy.get("h1").should("contain", "Pick a category");

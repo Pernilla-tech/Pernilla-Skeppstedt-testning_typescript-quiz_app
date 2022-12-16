@@ -21,7 +21,7 @@ const StartGame = () => {
     GameDifficulty.HARD,
     GameDifficulty.RANDOM,
   ];
-  const regions = [Region.SV, Region.BG];
+  const regions = [Region.SV, Region.GB];
 
   const handlePlayerName = (e: React.ChangeEvent<HTMLInputElement>) => {
     const enteredName = e.target.value;

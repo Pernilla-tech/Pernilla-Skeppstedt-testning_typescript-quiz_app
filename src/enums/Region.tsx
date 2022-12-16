@@ -1,4 +1,4 @@
 export enum Region {
   SV = "SV",
-  BG = "BG",
+  GB = "GB",
 }
