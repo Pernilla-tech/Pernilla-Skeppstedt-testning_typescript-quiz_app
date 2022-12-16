@@ -1,3 +1,4 @@
+import { API_BASE_URL } from "../confiq/QuizConfig";
 import { GameDifficulty } from "../enums/Difficulty";
 import { Region } from "../enums/Region";
 import { Category } from "../interfaces/ICategory";
@@ -17,7 +18,7 @@ export const getQuestion = async (
   }
 
   const queryString = params.join("&");
-  const endpoint = `https://the-trivia-api.com/api/questions?${queryString}`;
+  const endpoint = `${API_BASE_URL}/questions?${queryString}`;
   const request = await fetch(endpoint);
   const quiz = await request.json();
 

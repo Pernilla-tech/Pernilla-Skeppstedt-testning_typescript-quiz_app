@@ -1,6 +1,8 @@
 import { QuestionDifficulty } from "../enums/Difficulty";
 import { Category } from "../interfaces/ICategory";
 
+export const API_BASE_URL = "https://the-trivia-api.com/api";
+
 const CATEGORIES: Category[] = [
   {
     id: "arts_and_literature",
