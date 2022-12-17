@@ -2,7 +2,7 @@ import { useGameQuiz } from "../../context/QuizGameContext";
 import { GameDifficulty } from "../../enums/Difficulty";
 import { Region } from "../../enums/Region";
 import Button from "../button/Button";
-import { Wrapper } from "./StartGameStyle";
+import { Wrapper, Select } from "./StartGameStyle";
 
 const StartGame = () => {
   const {
@@ -52,7 +52,7 @@ const StartGame = () => {
         />
       </div>
       <p>Select difficulty</p>
-      <select
+      <Select
         data-testid="select-difficulty"
         onChange={handleSelectDifficulty}
         value={difficulty}
@@ -62,9 +62,9 @@ const StartGame = () => {
             {difficulty}
           </option>
         ))}
-      </select>
+      </Select>
       <p>Select region</p>
-      <select
+      <Select
         data-testid="select-region"
         onChange={handleSelectRegion}
         value={region}
@@ -74,7 +74,7 @@ const StartGame = () => {
             {region}
           </option>
         ))}
-      </select>
+      </Select>
 
       <Button
         data-testid="start-quiz-button"

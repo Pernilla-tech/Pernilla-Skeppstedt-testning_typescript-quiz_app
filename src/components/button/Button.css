@@ -1,3 +1,7 @@
+button {
+  color: #000;
+}
+
 button.right {
   background-color: #1bf5af;
 }
@@ -8,5 +12,4 @@ button.wrong {
 
 button.next {
   background-color: #82acff;
-  color: #000;
 }
