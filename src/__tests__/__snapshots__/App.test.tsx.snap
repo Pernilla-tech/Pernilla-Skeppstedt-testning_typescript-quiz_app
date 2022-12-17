@@ -25,6 +25,7 @@ Object {
             Select difficulty
           </p>
           <select
+            class="sc-iBYQkv eWfJYr"
             data-testid="select-difficulty"
           >
             <option
@@ -52,6 +53,7 @@ Object {
             Select region
           </p>
           <select
+            class="sc-iBYQkv eWfJYr"
             data-testid="select-region"
           >
             <option
@@ -60,9 +62,9 @@ Object {
               SV
             </option>
             <option
-              value="BG"
+              value="GB"
             >
-              BG
+              GB
             </option>
           </select>
           <button
@@ -97,6 +99,7 @@ Object {
           Select difficulty
         </p>
         <select
+          class="sc-iBYQkv eWfJYr"
           data-testid="select-difficulty"
         >
           <option
@@ -124,6 +127,7 @@ Object {
           Select region
         </p>
         <select
+          class="sc-iBYQkv eWfJYr"
           data-testid="select-region"
         >
           <option
@@ -132,9 +136,9 @@ Object {
             SV
           </option>
           <option
-            value="BG"
+            value="GB"
           >
-            BG
+            GB
           </option>
         </select>
         <button
