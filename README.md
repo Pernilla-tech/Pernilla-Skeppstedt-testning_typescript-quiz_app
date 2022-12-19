@@ -6,9 +6,10 @@
 - Select difficulty and region. This is optional.
 - Click at the "Start quiz" button
 - Pick a category. After that the quiz will start in 3 seconds.
-- Answer each one of the questions in max 30 seconds per question.
+- A 30 sec countdown will start.
+- Answer the question within 30 sec. 
 - After each question you will pick a new category.
-- When all nine questions are answered it shows the total score.
+- When all nine questions are answered the total score will show. 
 
 ## Design principes
 
@@ -19,11 +20,14 @@ I used styled components for styling the components, because I think its easy to
 
 ## Testning
 
-I have worked with TDD and BDD test. For the BDD test I used Cypress because i never used it before and wanted to try it out and learn more about it.
-
-For the components and functions I wanted to test I used unit test.
-
 Strategy: Tried to cover the requirements of the assignement. 
+
+For the BDD test I used Cypress because i never used it before and wanted to try it out and learn more about it. The BDD test describes "One round of a quiz game". The BDD test can be find in the cypress folder. 
+
+For the components and functions I wanted to test I used unit test to test for example a button or to see if a component is working an render as expected. 
+
+I used mock test for the API to test its request and response. 
+
 
 ## Diagrams
 
