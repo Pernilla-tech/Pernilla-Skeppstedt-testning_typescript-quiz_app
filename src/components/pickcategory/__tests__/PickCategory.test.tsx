@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import PickCategory from "./PickCategory";
+import PickCategory from "../PickCategory";
 
 it("Should render three random categories", () => {
   render(<PickCategory onCategoryPicked={() => {}} />);

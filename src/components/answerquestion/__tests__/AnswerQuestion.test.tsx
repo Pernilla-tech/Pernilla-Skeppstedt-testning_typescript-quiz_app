@@ -1,8 +1,8 @@
 import { render, screen } from "@testing-library/react";
 
-import { QuestionDifficulty } from "../../enums/Difficulty";
-import { Question } from "../../interfaces/IQuestion";
-import AnswerQuestion from "./AnswerQuestion";
+import { QuestionDifficulty } from "../../../enums/Difficulty";
+import { Question } from "../../../interfaces/IQuestion";
+import AnswerQuestion from "../AnswerQuestion";
 
 const question: Question = {
   id: "1",
