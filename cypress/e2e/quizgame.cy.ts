@@ -1,5 +1,5 @@
 describe("One round of a quiz game", () => {
-  it(" should show a page hwo starts the quiz", () => {
+  it(" should show a page who starts the quiz", () => {
     cy.visit("http://localhost:3000");
     cy.get("h1").should("contain", "Start quiz");
     cy.get("[data-testid=playername-input]").type("Johnny");
