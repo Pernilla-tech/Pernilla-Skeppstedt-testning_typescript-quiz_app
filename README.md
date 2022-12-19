@@ -22,7 +22,7 @@ I used styled components for styling the components, because I think its easy to
 
 Strategy: Tried to cover the requirements of the assignement. 
 
-For the BDD test I used Cypress because i never used it before and wanted to try it out and learn more about it. The BDD test describes "One round of a quiz game".
+For the BDD test I used Cypress because i never used it before and wanted to try it out and learn more about it. The BDD test describes "One round of a quiz game". The BDD test can be find in the cypress folder. 
 
 For the components and functions I wanted to test I used unit test to test for example a button or to see if a component is working an render as expected. 
 
